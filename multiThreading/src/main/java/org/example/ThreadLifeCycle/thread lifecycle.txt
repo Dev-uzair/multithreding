@@ -1,0 +1,11 @@
+NEW  --> a thread is in this state when it is created but not yet started.
+
+RUNNABLE -->after the  start method is called,the thread becomes runnable.
+            it's ready to run and is waiting for CPU time.
+
+RUNNING --> a thread is in this state when it is executing.
+
+BLOCKED/WAITING--> a thread is in this state when it is waiting for a resource
+                or for another thread to perform an action.
+
+TERMINATED--> a thread is in this state when it has finished executing.

@@ -1,0 +1,67 @@
+            Multi Tasking
+
+what is multiTasking?
+
+Multitasking allows an operating system to run multiple processes
+simultaneously. On single-core CPUs, this is done through time-
+sharing, rapidly switching between tasks. On multi-core CPUs, true
+parallel execution occurs, with tasks distributed across cores. The
+OS scheduler balances the load, ensuring efficient and responsive
+system performance.
+
+Example
+We are browsing the internet while listening
+to music and downloading a file.
+
+Multitasking utilizes the capabilities of a CPU and its cores.
+When an operating system performs multitasking, it can assign different
+tasks to different cores. This is more efficient than assigning
+all tasks to a single core.
+
+
+Time Slicing
+• Definition: Time slicing divides CPU time into small intervals called
+time slices or quanta.
+• Function: The OS scheduler allocates these time slices to different
+processes and threads, ensuring each gets a fair share of CPU time.
+Purpose: This prevents any single process or thread from
+monopolizing the CPU, improving responsiveness and enabling
+concurrent execution.
+
+
+context switching
+
+• Definition: Context switching is the process of saving the state of a
+currently running process or thread and loading the state of the next
+one to be executed.
+• Function: When a process or thread's time slice expires, the OS
+scheduler performs a context switch to move the CPU's focus to
+another process or thread.
+• Purpose: This allows multiple processes and threads to share the CPU,
+giving the appearance of simultaneous execution on a single-core CPU
+or improving parallelism on multi-core CPUs.
+
+
+Multitasking can be achieved through multithreading
+where each task is divided into threads that are managed
+concurrently.
+
+While multitasking typically refers to the running of
+multiple applications, multithreading is more granular.
+dealing with multiple threads within the same application
+or process.
+
+Multitasking operates at the level of processes, which are
+the operating system's primary units of execution.
+
+
+Multithreading operates at the level of threads, which are
+smaller units within a process
+
+Multitasking involves managing resources between
+completely separate programs, which may have
+independent memory spaces and system resources.
+
+Multithreading involves managing resources within a
+single program, where threads share the same memory
+and resources.

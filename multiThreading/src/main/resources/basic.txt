@@ -1,0 +1,60 @@
+        Multi threading
+
+cpu -->
+core & multi core -->
+program -->
+process -->
+thread
+
+what is cpu?
+
+The CPU, often referred to as the brain of the computer,
+ is responsible for executing instructions from programs.
+ It performs basic arithmetic, logic, control, and input/output
+operations specified by the instructions.
+
+eg: intel i5 ,amd ryzen 5
+
+what is core and multi core?
+
+A core is an individual processing unit within a CPU.
+ Modern CPUs can have multiple cores,allowing them
+ to perform multiple tasks simultaneously.
+
+
+A quad-core processor has four cores, allowing it to
+perform four tasks simultaneously. For instance, one core
+could handle your web browser, another your music
+player, another a download manager, and another a
+background system update.
+
+
+what is program?
+
+A program is a set of instructions written in a
+programming language that tells the computer
+how to perform a specific task
+example:
+Microsoft Word is a program that allows users to
+create and edit documents.
+
+what is process?
+
+A process is an instance of a program that is
+being executed. When a program runs, the
+operating system creates a process to manage
+its execution.
+When we open Microsoft Word, it becomes a
+process in the operating system.
+
+what is thread?
+
+A thread is the smallest unit of execution within a
+process. A process can have multiple threads, which
+share the same resources but can run independently.
+
+A web browser like Google Chrome might use multiple
+threads for different tabs, with each tab running as a
+separate thread.
+
+
