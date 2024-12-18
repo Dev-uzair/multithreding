@@ -4,17 +4,17 @@ public class Counter {
     private int count=0;
     private int count1=0;
 
-
-//    public synchronized   void increment(){
 //
-//            count++;
+//    public  void increment(){
 //
 //
+//       count++;
+//            count1++;
 //    }
-    public void increment(){
-        synchronized (this){
+    public synchronized void increment(){
+
         count++;
-        }
+
         count1++;
     }
 

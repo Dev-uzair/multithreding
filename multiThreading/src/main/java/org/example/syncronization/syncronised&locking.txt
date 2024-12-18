@@ -1,0 +1,13 @@
+when we use synchronised on any method it will allow only one thread at a time.
+also known as locking.
+
+
+    2 types of locks are there intrinsic and explicit.
+
+    intrinsic inBuilt in every java object.
+
+
+    explicit locks are more advanced lock in which you can control when to lock
+    or when to unlock and many things.
+
+

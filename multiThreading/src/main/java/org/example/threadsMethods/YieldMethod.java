@@ -6,7 +6,6 @@ public class YieldMethod extends Thread {
         for (int i = 0; i < 5; i++) {
             System.out.println ( Thread.currentThread ().getName ()+"   is running"  );
             Thread.yield ();//give the chance to another thread to run
-
         }
     }
 

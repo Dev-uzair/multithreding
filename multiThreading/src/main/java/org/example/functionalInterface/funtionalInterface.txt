@@ -1,0 +1,25 @@
+funtional interface are those interface which have only one abstract method
+
+for using lambda expression there should be an funtionalInterface behind it
+
+functional interface         ✅
+function
+consumer
+supplier
+predicate
+
+lambda function,             ✅
+optional,                    ✅
+stream api,                  ✅
+collectors,                  ✅
+grouping by,                 ✅
+memory enhancement,          ❌
+Spring boot,                 ✅
+rest api,                    ✅
+code repository,             ✅
+build tool,                  ✅
+unit test,                   ❌
+integration test,            ❌
+deployments,                 ❌
+engineering best practices,  ❌
+design patterns              ❌

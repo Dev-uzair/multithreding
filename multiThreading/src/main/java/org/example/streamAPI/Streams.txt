@@ -1,0 +1,4 @@
+  in collections there is a method called stream()
+  which convert your collection Of any type to Stream.
+
+  Stream is an Interface which have many abstract method
