@@ -18,8 +18,8 @@ eg: intel i5 ,amd ryzen 5
 what is core and multi core?
 
 A core is an individual processing unit within a CPU.
- Modern CPUs can have multiple cores,allowing them
- to perform multiple tasks simultaneously.
+Modern CPUs can have multiple cores,allowing them
+to perform multiple tasks simultaneously.
 
 
 A quad-core processor has four cores, allowing it to

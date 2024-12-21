@@ -4,3 +4,4 @@ package org.example.functionalInterface;
 public interface AddFunc {
     float apply(int a, int b);
 }
+//()->{}

@@ -1,4 +1,37 @@
-  in collections there is a method called stream()
-  which convert your collection Of any type to Stream.
+remaining one thing method refrencing
+achieved with(class name :: method name) operator
 
-  Stream is an Interface which have many abstract method
+Method references in Java are a shorthand notation for writing lambda expressions.
+There are four types of method references:
+
+Static Method Reference:
+
+Syntax: ClassName::staticMethodName
+Example: Math::max
+Used when: Referring to static methods
+
+
+Instance Method Reference of Particular Object:
+
+Syntax: objectInstance::instanceMethodName
+Example: System.out::println
+Used when: Calling instance method on a specific object
+
+
+Constructor Reference:
+
+Syntax: ClassName::new
+Example: ArrayList::new
+Used when: Creating new instances
+
+in collections there is a method called stream()
+which convert your collection Of any type to Stream.
+what does stream do?
+
+stream() basically make a any type of collection to a stream so that
+we can perform decalarative and functional programming on it.
+
+why should we use stream?
+
+
+

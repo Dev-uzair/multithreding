@@ -1,9 +1,7 @@
 package org.example.staticK;
 
 public class Test {
-    static{
-        System.out.println ("static block running" );
-    }
+
     //instance
     {
         System.out.println ("instance block running" );
@@ -16,6 +14,9 @@ public class Test {
         System.out.println ("main method running" );
         Test test=new Test ();
         test.something ();
+    }
+    static{
+        System.out.println ("static block running" );
     }
 
 }

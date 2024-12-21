@@ -1,5 +1,3 @@
-
-
 to create a new thread in java  ,
  you can either extend threads class
 or implement the runnable interface
