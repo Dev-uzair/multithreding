@@ -1,46 +1,57 @@
 package org.example.streamAPI;
 
-    import java.util.*;
+import java.util.*;
 import java.util.stream.*;
 
 
-    class Employee {
-        private String name;
-        private String department;
-        private int age;
-        private double salary;
+class Employee {
+    private String name;
+    private String department;
+    private int age;
+    private double salary;
 
-        public Employee(String name, String department, int age, double salary) {
-            this.name = name;
-            this.department = department;
-            this.age = age;
-            this.salary = salary;
-        }
-
-        // Getters
-        public String getName() { return name; }
-        public String getDepartment() { return department; }
-        public int getAge() { return age; }
-        public double getSalary() { return salary; }
-
-        @Override
-        public String toString() {
-            return name + " (" + department + ", " + age + ", $" + salary + ")";
-        }
+    public Employee(String name, String department, int age, double salary) {
+        this.name = name;
+        this.department = department;
+        this.age = age;
+        this.salary = salary;
     }
 
-    public class GroupByExamples {
-        public static void main(String[] args) {
-            List<Employee> employees = Arrays.asList(
-                    new Employee("John", "IT", 30, 70000),
-                    new Employee("Alice", "HR", 25, 55000),
-                    new Employee("Bob", "IT", 35, 70000),
-                    new Employee("Carol", "HR", 28, 70000),
-                    new Employee("David", "Finance", 40, 80000),
-                    new Employee("Eve", "Finance", 32, 65000)
-            );
+    // Getters
+    public String getName() {
+        return name;
+    }
 
-            // 1. Simple GroupBy by Department
+    public String getDepartment() {
+        return department;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    @Override
+    public String toString() {
+        return name + " (" + department + ", " + age + ", $" + salary + ")";
+    }
+}
+
+public class GroupByExamples {
+    public static void main(String[] args) {
+        List<Employee> employees = Arrays.asList (
+                new Employee ( "John", "IT", 30, 70000 ),
+                new Employee ( "Alice", "HR", 25, 55000 ),
+                new Employee ( "Bob", "IT", 35, 70000 ),
+                new Employee ( "Carol", "HR", 28, 70000 ),
+                new Employee ( "David", "Finance", 40, 80000 ),
+                new Employee ( "Eve", "Finance", 32, 65000 )
+        );
+
+        // 1. Simple GroupBy by Department
 //            Map<String, List<Employee>> byDepartment = employees.stream()
 //                    .collect(Collectors.groupingBy(Employee::getDepartment));
 //            System.out.println("Grouped by Department: " + byDepartment);
@@ -80,7 +91,7 @@ import java.util.stream.*;
 //                    ));
 //            System.out.println("Employee Names by Department: " + employeeNamesByDept);
 //
-            // 6. GroupBy with Max Salary
+        // 6. GroupBy with Max Salary
 //            Map<String, Optional<Employee>> maxSalaryByDept = employees.stream()
 //                    .collect(Collectors.groupingBy(
 //                            Employee::getDepartment,
@@ -112,9 +123,9 @@ import java.util.stream.*;
 //            System.out.println("Salary Statistics by Department: " + salaryStatsByDept);
 //
 //            // 9. GroupBy with Partitioning
-            Map<Boolean, List<Employee>> seniorsByDept = employees.stream ( )
-                    .collect ( Collectors.partitioningBy ( e -> e.getAge ( ) > 30 ));
-            System.out.println("Seniors by Department: " + seniorsByDept);
-        }
+        Map<Boolean, List<Employee>> seniorsByDept = employees.stream ( )
+                .collect ( Collectors.partitioningBy ( e -> e.getAge ( ) > 30 ) );
+        System.out.println ( "Seniors by Department: " + seniorsByDept );
     }
+}
 
