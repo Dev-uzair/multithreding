@@ -1,0 +1,25 @@
+1. Lambda Expressions and Functional Interfaces
+
+○ Write a program to sort a list of integers using lambda expressions.
+○ Create a custom functional interface and implement it using lambda expressions.
+○ Use Comparator with lambda to sort a list of employees by name and salary.
+
+2. Streams API
+
+○ Write a program that uses a Stream to filter and sort a list of strings.
+○ Use the map function to convert a list of integers to their squared values.
+○ Create a program that demonstrates the use of collect() to group a list of
+objects (e.g., a list of books) by a specific property (e.g., genre).
+○ Demonstrate the use of flatMap() by flattening a list of lists into a single list.
+
+3. Optional Class
+
+○ Implement a method that returns an Optional<String> and handles null
+values gracefully using orElse() and ifPresent().
+○ Create a program where you process an Optional value, showcasing the use
+of map(), flatMap(), and filter().
+
+4. Default Methods
+○ Implement an interface with default methods, and use it in a concrete class.
+○ Use a default method in an interface to calculate the area of different shapes
+(e.g., Circle, Rectangle).

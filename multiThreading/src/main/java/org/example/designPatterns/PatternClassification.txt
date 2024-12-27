@@ -1,0 +1,2 @@
+Design patterns are categorized based on their purpose and functionality
+into creational, structural, and behavioral types.
